@@ -28,13 +28,16 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.colorDialog1 = new System.Windows.Forms.ColorDialog();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.generateConfigButton = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.startServerButton = new System.Windows.Forms.Button();
             this.minimizeButton = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -75,6 +78,7 @@
             this.startServerButton.TabIndex = 1;
             this.startServerButton.Text = "Start Server";
             this.startServerButton.UseVisualStyleBackColor = true;
+            this.startServerButton.Click += new System.EventHandler(this.startServerButton_Click);
             // 
             // minimizeButton
             // 
@@ -85,11 +89,22 @@
             this.minimizeButton.Text = "Minimize to tray";
             this.minimizeButton.UseVisualStyleBackColor = true;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.InitialImage")));
+            this.pictureBox1.Location = new System.Drawing.Point(22, 100);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(209, 59);
+            this.pictureBox1.TabIndex = 3;
+            this.pictureBox1.TabStop = false;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(253, 108);
+            this.ClientSize = new System.Drawing.Size(253, 168);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.minimizeButton);
             this.Controls.Add(this.startServerButton);
             this.Controls.Add(this.groupBox1);
@@ -97,9 +112,10 @@
             this.MaximizeBox = false;
             this.Name = "MainForm";
             this.ShowIcon = false;
-            this.Text = "StatsHelix CS:GO Round Notifier";
+            this.Text = "CS:GO Round Notifier";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -112,6 +128,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button startServerButton;
         private System.Windows.Forms.Button minimizeButton;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 

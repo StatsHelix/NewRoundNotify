@@ -1,13 +1,14 @@
-﻿"Console Sample v.1"
+﻿"SteelSeries Engine v 1.0"
 {
- "uri" "http://127.0.0.1:3000"
+ "uri" "http://127.0.0.1:50509/csgo_game_event"
  "timeout" "5.0"
  "buffer"  "0.1"
- "throttle" "0.5"
- "heartbeat" "60.0"
+ "throttle" "0.1"
+ "heartbeat" "10.0"
  "auth"
  {
-   "token" "CCWJu64ZV3JHDT8hZc"
+   "key1" "rx54AtFVYw2bXmCCWJu6"
+   "key2" "6HMGuv2F8m5grBFy292d"
  }
  "data"
  {
