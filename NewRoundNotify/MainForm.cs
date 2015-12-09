@@ -121,7 +121,7 @@ namespace NewRoundNotify
             startServerButton.Enabled = false;
 
             Server = new HttpListener();
-            Server.Prefixes.Add("http://127.0.0.1:50409/");
+            Server.Prefixes.Add("http://127.0.0.1:50509/");
             Server.Start();
 
             var t = new Thread(new ThreadStart(HandleRequests));
@@ -137,9 +137,6 @@ namespace NewRoundNotify
             while(true)
             {
                 var request = Server.GetContext();
-
-                Debug.WriteLine("------");
-                Debug.WriteLine(request.Request.Url);
 
                 JObject data = (JObject)serializer.Deserialize(new JsonTextReader(new StreamReader(request.Request.InputStream)));
                 

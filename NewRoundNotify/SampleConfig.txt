@@ -1,4 +1,4 @@
-﻿"SteelSeries Engine v 1.0"
+"SteelSeries Engine v 1.0"
 {
  "uri" "http://127.0.0.1:50509/csgo_game_event"
  "timeout" "5.0"
@@ -7,17 +7,17 @@
  "heartbeat" "10.0"
  "auth"
  {
-   "key1" "rx54AtFVYw2bXmCCWJu6"
-   "key2" "6HMGuv2F8m5grBFy292d"
+   "key1" "1234"
+   "key2" "5678"
  }
  "data"
  {
-   "provider"            "1"
-   "map"                 "1"
+   "provider"            "0"
+   "map"                 "0"
    "round"               "1"
-   "player_id"           "1"
-   "player_state"        "1"
-   "player_weapons"      "1"
-   "player_match_stats"  "1"
+   "player_id"           "0"
+   "player_state"        "0"
+   "player_weapons"      "0"
+   "player_match_stats"  "0"
  }
 }
